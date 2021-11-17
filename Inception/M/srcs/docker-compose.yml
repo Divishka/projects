@@ -1,28 +1,20 @@
-version: "3.9"
+version: "3.8"
 
 services: 
     nginx:
+        container_name: nginx
         image: nginx
         build: requirements/nginx/
-        container_name: nginx
         restart: always
         env_file: .env
         ports: 
             - "443:443"
+        volumes:
+            - wordpress:/var/www/html/
         networks:
-            - docker_network
+            - Inception
         depends_on: 
             - wordpress
-    mariadb:
-        container_name: mariadb
-        image: mariadb
-        build: requirements/mariadb/
-        restart: always
-        env_file: .env
-        volumes:
-            - db
-        networks: 
-            - docker_network
     wordpress:
         container_name: wordpress
         image: wordpress
@@ -30,12 +22,21 @@ services:
         restart: always
         env_file: .env
         volumes:
-            - wordpress
+            - wordpress:/var/www/html/
         networks: 
-            - docker_network
+            - Inception
         depends_on: 
             - mariadb
-            
+    mariadb:
+        container_name: mariadb
+        image: mariadb
+        build: requirements/mariadb/
+        restart: always
+        env_file: .env
+        volumes:
+            - db:/var/lib/mysql/
+        networks: 
+            - Inception
 
 volumes:
     wordpress:
@@ -44,16 +45,16 @@ volumes:
         driver_opts:
             type: none
             o: bind
-            device: ~/goinfre/awhana/virtual_machine/wordpress
+            device: ~/goinfre/virtual_machine/wordpress
     db:
         name: db
         driver: local
         driver_opts:
             type: none
             o: bind
-            device: ~/goinfre/awhana/virtual_machine/db
+            device: ~/goinfre/virtual_machine/db
 
 networks:
     docker_network:
-        name: docker_network
+        name: Inception
         driver: bridge
