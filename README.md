@@ -1,5 +1,5 @@
 # C
-<a href = "https://github.com/Divishka/projects/tree/main/libft">libft</a>
+<a href = "https://github.com/Divishka/projects/tree/main/libft">libft</a> - небольшая библиотека со стандартными функциям
 
 <a href = "">get_next_line</a>
 
