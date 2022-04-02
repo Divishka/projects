@@ -1,12 +1,11 @@
 # Unreal Engine
+<p style = "border: 1px solid red;">
 <a href = "https://www.youtube.com/watch?v=6Gsy6yMB1oE">Into the Void</a> - психологический триллер
+</p>
 
 <a href = "https://github.com/lex-cmd/RGcube">RGcuBe</a> - паззл-головоломка
 
 # C++
-
-<a href="https://github.com/Divishka/projects/tree/main/Inception">
-  <img align="center" style="margin:1rem 0.5rem" src="https://github-readme-stats.vercel.app/api/pin/?username=Divishka&repo=projects/Inception&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34"
 <a href = "https://github.com/Divishka/projects/tree/main/Inception">Inception</a> - сервер на nginx, собранный и запущенный на docker-compose
 
 <a href = "https://github.com/Divishka/projects/tree/main/ft_containers">ft_containers</a> - реализации контейнеров из стандартной библиотеки
