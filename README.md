@@ -8,7 +8,7 @@
 
 <a href = "https://github.com/Divishka/projects/tree/main/ft_containers">ft_containers</a> - реализации контейнеров из стандартной библиотеки
 
-<a href = "">webserver</a> - веб сервер на подобии http
+<a href = "https://github.com/DaDvoy/WebServer">webserver</a> - веб сервер на подобии http
 
 <a href = "https://github.com/Divishka/projects/tree/main/CPP_Module">CPP_Module</a> - сборник мини-проектов на каждый из базовых аспектов языка
 
