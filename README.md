@@ -1,6 +1,6 @@
 # Unreal Engine
 
-<a href = "https://lex-cmd.itch.io/homeroadwork">HOME ROAD WORK</a> - аркада
+<a href = "https://lex-cmd.itch.io/homeroadwork">HOME ROAD WORK</a> - аркада для игрового джема SiberianJAM (2 место)
 
 <a href = "https://www.youtube.com/watch?v=6Gsy6yMB1oE">Into the Void</a> - психологический триллер
 
